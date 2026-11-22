@@ -1,0 +1,33 @@
+{
+  "name": "ubuntu-service",
+  "version": "1.0.0",
+  "description": "Context-aware CLI to identify, inspect, restart, and view logs of the single systemd service running in the current directory on an Ubuntu VPS.",
+  "type": "module",
+  "main": "src/index.js",
+  "bin": {
+    "ubuntu-service": "./bin/index.js",
+    "us": "./bin/index.js"
+  },
+  "files": [
+    "bin",
+    "src"
+  ],
+  "scripts": {
+    "test": "node --test"
+  },
+  "keywords": [
+    "ubuntu",
+    "systemd",
+    "service",
+    "vps",
+    "process",
+    "restart",
+    "cwd",
+    "caddy"
+  ],
+  "author": "KeshavSoft",
+  "license": "ISC",
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
