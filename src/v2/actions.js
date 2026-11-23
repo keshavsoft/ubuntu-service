@@ -1,9 +1,6 @@
-import { findServiceForDirectory } from "./detector.js";
-import { getServiceLiveStatus, restartService, getServiceLogs } from "./systemctl.js";
+import { findServiceForDirectory } from "ubuntu-service-detect";
+import { getServiceLiveStatus, restartService, getServiceLogs } from "ubuntu-service-restart";
 
-/**
- * High-level action to inspect the service for the current or target directory.
- */
 export function inspectCurrentService(targetDir = process.cwd(), options = {}) {
     const detected = findServiceForDirectory(targetDir, options);
     if (!detected.found) {
@@ -17,9 +14,6 @@ export function inspectCurrentService(targetDir = process.cwd(), options = {}) {
     };
 }
 
-/**
- * High-level action to restart the service associated with current or target directory.
- */
 export function restartCurrentService(targetDir = process.cwd(), options = {}) {
     const detected = findServiceForDirectory(targetDir, options);
     if (!detected.found) {
@@ -37,9 +31,6 @@ export function restartCurrentService(targetDir = process.cwd(), options = {}) {
     };
 }
 
-/**
- * High-level action to get logs of the service associated with current or target directory.
- */
 export function getCurrentServiceLogs(targetDir = process.cwd(), lines = 25, options = {}) {
     const detected = findServiceForDirectory(targetDir, options);
     if (!detected.found) {

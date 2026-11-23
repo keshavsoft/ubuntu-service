@@ -22,6 +22,10 @@
     "cli": "node bin/index.js",
     "test": "node --test"
   },
+  "dependencies": {
+    "ubuntu-service-detect": "file:../ubuntu-service-detect",
+    "ubuntu-service-restart": "file:../ubuntu-service-restart"
+  },
   "keywords": [
     "ubuntu",
     "systemd",
