@@ -16,6 +16,7 @@
 
 - **Dedicated Documentation:** [https://keshavsoft.github.io/ubuntu-service-docs/service/](https://keshavsoft.github.io/ubuntu-service-docs/service/)
 - **Full Suite Hub:** [https://keshavsoft.github.io/ubuntu-service-docs/](https://keshavsoft.github.io/ubuntu-service-docs/)
+- **All 8 Repositories in Family:** [https://keshavsoft.github.io/ubuntu-service-docs/repos/](https://keshavsoft.github.io/ubuntu-service-docs/repos/)
 - **Sub-packages:**
   - `ubuntu-service-detect`: [npm](https://www.npmjs.com/package/ubuntu-service-detect) | [docs](https://keshavsoft.github.io/ubuntu-service-docs/detect/) | [repo](https://github.com/keshavsoft/ubuntu-service-detect)
   - `ubuntu-service-restart`: [npm](https://www.npmjs.com/package/ubuntu-service-restart) | [docs](https://keshavsoft.github.io/ubuntu-service-docs/restart/) | [repo](https://github.com/keshavsoft/ubuntu-service-restart)
