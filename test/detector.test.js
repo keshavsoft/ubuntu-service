@@ -3,7 +3,7 @@ import assert from "node:assert/strict";
 import fs from "node:fs";
 import path from "node:path";
 import os from "node:os";
-import { findServiceForDirectory, normalizePath } from "../src/v1/detector.js";
+import { findServiceForDirectory, normalizePath } from "../src/index.js";
 
 describe("detector.js", () => {
     let tmpDir;
@@ -75,6 +75,16 @@ Restart=always
     test("returns found: false when directory has no matching service", () => {
         const unmanagedDir = path.join(tmpDir, "unmanaged-folder");
         fs.mkdirSync(unmanagedDir, { recursive: true });
+
+        // Service file with multiple ExecStart lines (Array in INI parser)
+        fs.writeFileSync(path.join(systemdDir, "multi-exec.service"), `
+[Unit]
+Description=Multi ExecStart Service
+
+[Service]
+ExecStart=/bin/true
+ExecStart=/usr/bin/node /some/other/path/app.js
+        `.trim());
 
         const result = findServiceForDirectory(unmanagedDir, { systemdDir });
         assert.equal(result.found, false);

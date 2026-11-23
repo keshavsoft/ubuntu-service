@@ -1,2 +1,2 @@
-// Orchestrator: delegates CLI execution directly to latest version (v1)
-export { runCli, printHelp } from "./v1/cli.js";
+// Orchestrator: delegates CLI execution directly to latest version (v2)
+export { runCli, printHelp } from "./v2/cli.js";

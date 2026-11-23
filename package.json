@@ -1,12 +1,13 @@
 {
   "name": "ubuntu-service",
-  "version": "1.0.0",
+  "version": "1.2.1",
   "description": "Context-aware CLI to identify, inspect, restart, and view logs of the single systemd service running in the current directory on an Ubuntu VPS.",
   "type": "module",
   "main": "./src/index.js",
   "exports": {
     ".": "./src/index.js",
-    "./v1": "./src/v1/index.js"
+    "./v1": "./src/v1/index.js",
+    "./v2": "./src/v2/index.js"
   },
   "bin": {
     "ubuntu-service": "bin/index.js",
