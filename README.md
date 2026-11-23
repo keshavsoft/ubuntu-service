@@ -1,13 +1,24 @@
 # ubuntu-service
 
-[![npm version](https://img.shields.io/badge/npm-v1.0.0-blue.svg)](https://www.npmjs.com/package/ubuntu-service)
+[![npm version](https://img.shields.io/badge/npm-v1.2.1-blue.svg)](https://www.npmjs.com/package/ubuntu-service)
 [![License: ISC](https://img.shields.io/badge/License-ISC-green.svg)](https://opensource.org/licenses/ISC)
+[![Docs](https://img.shields.io/badge/docs-GitHub_Pages-sky.svg)](https://keshavsoft.github.io/ubuntu-service-docs/service/)
+[![Suite Hub](https://img.shields.io/badge/suite-ubuntu--service-orange.svg)](https://keshavsoft.github.io/ubuntu-service-docs/)
 [![Organization](https://img.shields.io/badge/org-KeshavSoft-purple.svg)](https://github.com/keshavsoft)
 [![Node](https://img.shields.io/badge/node-%3E%3D18.0.0-brightgreen.svg)](https://nodejs.org)
-[![Zero Dependencies](https://img.shields.io/badge/dependencies-0-success.svg)](https://github.com/keshavsoft/ubuntu-service)
 
 > **Context-aware single service manager for Ubuntu VPS.**  
 > Automatically identifies the systemd service associated with your current working directory (`process.cwd()`), inspects its status, restarts it, and displays its logs. Zero memory needed—run right after `git pull`.
+
+---
+
+## 🌐 Documentation & Suite Links
+
+- **Dedicated Documentation:** [https://keshavsoft.github.io/ubuntu-service-docs/service/](https://keshavsoft.github.io/ubuntu-service-docs/service/)
+- **Full Suite Hub:** [https://keshavsoft.github.io/ubuntu-service-docs/](https://keshavsoft.github.io/ubuntu-service-docs/)
+- **Sub-packages:**
+  - `ubuntu-service-detect`: [npm](https://www.npmjs.com/package/ubuntu-service-detect) | [docs](https://keshavsoft.github.io/ubuntu-service-docs/detect/) | [repo](https://github.com/keshavsoft/ubuntu-service-detect)
+  - `ubuntu-service-restart`: [npm](https://www.npmjs.com/package/ubuntu-service-restart) | [docs](https://keshavsoft.github.io/ubuntu-service-docs/restart/) | [repo](https://github.com/keshavsoft/ubuntu-service-restart)
 
 ---
 
